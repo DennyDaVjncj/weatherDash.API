@@ -19,7 +19,7 @@
             </h1>
         </div>
     </div>
-    <br>
+    <hr>
     <!-- 2 column grid. 1 with form field & dynamic div, which appends to page with each user query -->
     <!-- form field input queries openweather api for weather information, ifo is to populate in right colum of page -->
     <div class="container">
@@ -30,14 +30,19 @@
                 </h4>
                 <form class="form-inline">
                     <label class="sr-only" for="inlineFormInputName2">Name</label>
-                    <input id="dom1" type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2"
+                    <input id="userQuery" type="text" class=";form-control mb-2 mr-sm-2" id="inlineFormInputName2"
                     placeholder="search here">
-                    <button id="clckEvnt" type="submit" class="btn btn-primary my-1">
+                    <button id="clckEvnt1" type="submit" class="btn btn-primary my-1">
                         Find Out
-                    </button>
+                    </button><br>
+                    <div id="prePend" class="card">
+                        <div class="card-body">
+                          prePended text on every user request
+                        </div>
+                      </div>
                 </form>
             </div>
-            <div class="col-8 lightBlue">
+            <div class="col-8">
                 <div class="card">
                     <h5 class="card-header">Here's what you were looking for:</h5>
                     <div id="searchResults" class="card-body">
@@ -47,10 +52,19 @@
                 </div>
                 <div class="col-8">
                     <h5 id="forecast">
-                        forecast
-                    </h5>
-                    <div>
-                        card .class, really to proliferate based on user request
+                        3-day outlook
+                    </h5><!--these cards will pend to page based on user request-->
+                    <div class="card text-white bg-warning mb-3" style="max-width: 18rem;">
+                        <div id="cardForcastDate" class="card-header">Date</div>
+                        <div class="card-body">
+                            <h5 class="card-title">
+                              graphic/icon
+                            </h5>
+                            <p id="tempHumidity" class="card-text">
+                                temperature:<br>
+                                Humidity:
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>
