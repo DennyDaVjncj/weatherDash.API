@@ -29,20 +29,23 @@
                 </h4>
                 <form class="form-inline">
                     <label class="sr-only" for="inlineFormInputName2">Name</label>
-                    <input type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2"
-                        placeholder="search here"><button type="submit" class="btn btn-primary my-1">Find Out</button>
+                    <input id="dom1" type="text" class="form-control mb-2 mr-sm-2" id="inlineFormInputName2"
+                    placeholder="search here">
+                    <button id="clckEvnt" type="submit" class="btn btn-primary my-1">
+                        Find Out
+                    </button>
                 </form>
             </div>
             <div class="col-8 lightBlue">
                 <div class="card">
                     <h5 class="card-header">Here's what you were looking for:</h5>
-                    <div class="card-body">
+                    <div id="searchResults" class="card-body">
                         <h5 class="card-title">your last city searched</h5>
-                        <p class="card-text">weather related information</p>                        
+                        <p class="card-text">weather related information</p>
                     </div>
                 </div>
                 <div class="col-8">
-                    <h5 id="DomTrgt">
+                    <h5 id="forecast">
                         forecast
                     </h5>
                     <div>
