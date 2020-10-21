@@ -6,7 +6,7 @@ let domDiv=$("<div>");//new divs for every user temp search
 let pendingList=$("#prePend");//trgtng div which will store newDivs
 
 function initialQuery(){
-    //create what I need on the client
+    //create what I need on the client via DOM
         //this may be the new direction
     searchBttn.on("click",function(){
         domDiv.text(userQuery);
@@ -17,3 +17,4 @@ function initialQuery(){
 
 //focusing on stored query selections, I will populate <divs> on user request(s).
     //pass to localStorage as well
+//add event.preventDefault() on form

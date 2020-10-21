@@ -26,22 +26,23 @@
     <!-- form field input queries openweather api for weather information, ifo is to populate in right colum of page -->
     <div class="container">
         <div class="row">
-            <div class="jungleFever col-4">
-                <h4>
-                    find out conditions in:
-                </h4>
-                <form class="form-inline">
-                    <label class="sr-only" for="inlineFormInputName2">Name</label>
-                    <input id="userQuery" type="text" class=";form-control mb-2 mr-sm-2" id="inlineFormInputName2"
-                        placeholder="search here">
-                    <button id="clckEvnt1" type="submit" class="btn btn-primary my-1">
-                        Find Out
-                    </button>                    
+            <div class="jungleFever col-4">                
+                <form>
+                    <label for="query-input">
+                        Query location here:
+                    </label>
+                    <input id="userQuery" type="text" placeholder="search here">
+                    <input id="clckEvnt1" type="submit" value="fetch data!">            
                 </form>
+                <hr>
                 <div id="prePend" class="card">
-                    <div class="card-body">
-                        prePended text on every user request
-                    </div>
+                    <ul class="list-group">
+                        <li class="list-group-item">
+                            <h6 id="#prePend">
+                                sample text!
+                            </h6>
+                        </li>
+                    </ul>
                 </div>
             </div>
             <div class="col-8">
